@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        /* display: block; */
+        display: inline-block;
+        margin: 10px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label>Date:</label>
+      <span><input type="date" /></span>
+    </div>
+
+    <div>
+      <label>Month:</label>
+      <span><input type="month" /></span>
+    </div>
+
+    <div>
+      <label>Week:</label>
+      <span><input type="week" /></span>
+    </div>
+
+    <div>
+      <label>Time:</label>
+      <span><input type="time" /></span>
+    </div>
+
+    <div>
+      <label>Password:</label>
+      <span><input type="password" /></span>
+    </div>
+
+    <div>
+      <label>Single File:</label>
+      <span><input type="file" /></span>
+    </div>
+
+    <div>
+      <label>Multipule Files:</label>
+      <span><input type="file" multiple accept=".jpg, .png" /></span>
+    </div>
+
+    <div>
+      <label>Range:</label>
+      <span><input type="range" value="30" /></span>
+    </div>
+
+    <div>
+      <label>Date Time:</label>
+      <span><input type="datetime-local" /></span>
+    </div>
+
+    <div>
+      <label>Color Codes:</label>
+      <span><input type="color" /></span>
+    </div>
+
+    <div>
+      <label>Courses:</label>
+      <span>HTML<input type="checkbox" /></span>
+      <span>CSS:<input type="checkbox" /></span>
+      <span>Java Script:<input type="checkbox" /></span>
+      <span>React Js<input type="checkbox" checked /></span>
+    </div>
+
+    <div>
+      <label>Gender</label>
+      <span>
+        M:<input type="radio" name="Gender" checked /> F:<input
+          type="radio"
+          name="Gender"
+        />
+        Ot:<input type="radio" name="Gender" />
+      </span>
+    </div>
+    <div>
+      <label>Citys Drop Down:</label>
+      <select>
+        <option>--Please selct city--</option>
+        <option>Bangalore</option>
+        <option>Hyderbad</option>
+        <option selected>Pune</option>
+        <option>Delhi</option>
+        <option>Nellore</option>
+        <option>Mumbaie</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Multiple Citys Drop Down:</label>
+      <select multiple>
+        <option>--Please selct city--</option>
+        <option>Bangalore</option>
+        <option>Hyderbad</option>
+        <option selected>Pune</option>
+        <option>Delhi</option>
+        <option selected>Nellore</option>
+        <option>Mumbaie</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Address</label>
+      <textarea rows="5" cols="30" readonly draggable="true">
+Hydaebad, ammerpet</textarea
+      >
+    </div>
+  </body>
+</html>
