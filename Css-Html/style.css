@@ -1,0 +1,74 @@
+   .squer {
+       width: 100px;
+       height: 100px;
+       border: 2px solid gray;
+       margin-top: 20px;
+   }
+   .psedo-hover:hover{
+    width: 200px;
+    height: 200px;
+    border: 2px solid gold;
+    background-color: cadetblue;
+    color: black;
+
+   }
+   a:active{
+    background: green;
+    color: brown;
+   }
+   .input-check:checked{
+    background-color: aqua;
+    height: 20px;
+    width: 20px;
+   }
+   .input-dis:disabled{
+    background-color: antiquewhite;
+    height: 20px;
+    width: 200px;
+    border-radius: 2px solid;
+   }
+
+   .input-dis:enabled{
+    background: green;
+    color: blue;
+   }
+   input:focus{
+    height: 40px;
+    width: 200px;
+    background: black;
+    color: aliceblue;
+   }
+   /* .nth-p:nth-child(2), .nth-p:nth-child(5){ */
+   .nth-p:nth-child(even){
+    width: 100px;
+        height: 100px;
+        border: 2px solid gold;
+        background-color: cadetblue;
+        color: black;
+    
+   }
+   .nth-p:nth-child(odd){
+    width: 100px;
+        height: 100px;
+        border: 2px solid rgb(152, 19, 32);
+        background-color: rgb(59, 34, 151);
+        color: black;
+    
+   }
+   .after-div::after{
+    content: " react js";
+    border: 2px solid;
+    width: 200px;
+    /* height: 100px; */
+    display: inline-block;
+   }
+   .after-div::before{
+    content: "Java Script ";
+    border: 2px solid;
+    width: 200px;
+    /* height: 100px; */
+    display: inline-block;
+   }
+   .first-div::first-letter{
+    color: red;
+   }
