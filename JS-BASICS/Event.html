@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" />
+      <!-- <button onclick="showText('show')">Show Text</button>
+      <button onclick="hideText('hide')">Hide Text</button> -->
+      <button onclick="showHide('show')">Show Text</button>
+      <button onclick="showHide('hide')">Hide Text</button>
+    </div>
+    <div id="testDiv"></div>
+  </body>
+  <script>
+    /*  function showText() {
+      document.getElementById("testDiv").innerHTML = "<h1>Hello React js</h1>";
+    }
+    function hideText() {
+      document.getElementById("testDiv").innerHTML = "";
+    } */
+    function showHide(input) {
+      if (input == "show") {
+        document.getElementById("testDiv").innerHTML =
+          "<h1>Hello React js</h1>";
+      } else if (input == "hide") {
+        document.getElementById("testDiv").innerHTML = "";
+      }
+    }
+  </script>
+</html>

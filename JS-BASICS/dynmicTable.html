@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="number" id="input" />
+      <button onclick="showTable()">showTable</button>
+      <!-- <button ondblclick="showTable()">showTable</button> -->
+      <!-- <button onmouseover="showTable()">showTable</button> -->
+      <div id="showTableList"></div>
+    </div>
+  </body>
+  <script>
+    function showTable() {
+      var tableValue = document.getElementById("input").value;
+      if (tableValue > 1) {
+        document.getElementById("showTableList").innerHTML = "";
+        for (var i = 1; i <= 10; i++) {
+          var reslut = tableValue + "*" + i + "=" + tableValue * i;
+          document.getElementById("showTableList").innerHTML +=
+            reslut + "<br/>";
+        }
+      } else {
+        alert("Please enter more than one...");
+      }
+    }
+  </script>
+</html>
