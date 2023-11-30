@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="length"></div>
+    <div id="captils"></div>
+    <div id="smalls"></div>
+  </body>
+  <script>
+    var name = "Hello react js world";
+    var str = "    react js    ";
+    var trmStr = str.trim();
+    console.log(str);
+    console.log(trmStr);
+
+    document.getElementById("length").innerHTML =
+      "<h3>Name length is: " + name.length + "</h3>";
+    document.getElementById("captils").innerHTML = name.toUpperCase();
+    document.getElementById("smalls").innerHTML =
+      "<h3>" + name.toLowerCase() + "</h3>";
+
+    console.log(name.length);
+    console.log(name.charAt(4));
+  </script>
+</html>
