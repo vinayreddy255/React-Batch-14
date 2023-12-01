@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var str = "hello react Js angular js vue js back bone js node js";
+    // var str = "hello reactJs angularJs vueJs back bonejs nodeJs";
+    var strWord = str.split(" ");
+    var output = "";
+    for (var i = 0; i < strWord.length; i++) {
+      if (strWord[i].toLowerCase() == "js") {
+        strWord[i] = "data";
+      }
+      output += strWord[i] + " ";
+    }
+    console.log(output);
+
+    // 0 1 1 2 3 5 8
+    // abc-its not pal, aba--which is palndrom
+  </script>
+</html>
