@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var ar = ["a", "b", "c", "d", "e", "f", "g", "h", "a", "b", "c", "h"];
+    var arsp = ["App", "Jav", "Html", "css", "Angular", "samsung", "sql"];
+
+    var mergeArr = [].concat(ar, arsp);
+    console.log(mergeArr);
+    var strore = ar.slice(0, 3);
+    console.log("orginal>>>", ar);
+    console.log("slice arr>>>", strore);
+
+    var storeDelte = arsp.splice(2, 3, ".net", "plsql");
+
+    console.log(arsp);
+    console.log(storeDelte);
+    console.log(ar.includes("d"));
+    console.log(ar.includes("dx"));
+    console.log(ar.indexOf("d"));
+    console.log(ar.indexOf("dx"));
+    console.log(ar.indexOf("c"));
+    console.log(ar.lastIndexOf("c"));
+  </script>
+</html>
