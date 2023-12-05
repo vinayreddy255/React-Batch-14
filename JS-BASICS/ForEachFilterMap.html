@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var arr = [
+      "App",
+      "Jav",
+      "Html",
+      "css",
+      "Angular",
+      "samsung",
+      "sql",
+      "Angular",
+      "Java",
+      "Angular",
+      "Angular",
+    ];
+    /*  for (var i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    } */
+
+    // [].forEach(function(e,i,a){})  syntext
+    arr.forEach(function (e, i, a) {
+      // console.log(e, "<<>>", i, a);
+      console.log(e);
+    });
+
+    // [].filter(function(e,i,a){})  syntext
+    var filterArr = arr.filter(function (e, i, a) {
+      return e === "Angular";
+    });
+    console.log(arr);
+    console.log(filterArr);
+
+    // [1,2,3,4,5,6,7,8,9,10,12,13,14,15]
+    //[{name:'ram', age:12, salar:2000}, {name:'sam', age:22, salar:3000}] // greterthen 5000 salry
+    // even arry
+    // odd arry
+    // prim num arry
+
+    // [].map(function(e,i,a){})  syntext
+    var nArr = [1, 2, 3, 4, 5, 6];
+    var mar1 = nArr.map(function (e) {
+      return e * 5;
+    });
+    console.log("original map arry", nArr);
+    console.log("mapArr>>", mar1);
+    var mapAr1 = [
+      { name: "Ram", age: 21, sal: 2000 },
+      { name: "Sam", age: 31, sal: 3000 },
+      { name: "Kiran", age: 32, sal: 4000 },
+      { name: "Hari", age: 25, sal: 5000 },
+    ];
+
+    var empAr = mapAr1.map(function (e) {
+      return e.name;
+    });
+    /*  for (var i = 0; i < mapAr1.length; i++) {
+      empAr.push(mapAr1[i].name);
+    } */
+
+    //
+    console.log(empAr);
+    var arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var filterAr2 = arr2.filter(function (e) {
+      return e > 5;
+    });
+    var mapArr2 = arr2.map(function (e) {
+      return e > 5;
+    });
+    console.log(filterAr2);
+    console.log(mapArr2);
+  </script>
+</html>
