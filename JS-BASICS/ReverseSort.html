@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var ar1 = ["b", "a", "c", "d", "h", "e", "f"];
+    var unsortAr = ["k", "l", "a", "c", "f", "b", "e", "d"];
+    var numAr = [1, 5, 3, 2, 4, 6, 7, 9, 8, 12, 11, 14, 13, 15];
+    var reverseAr = ar1.reverse();
+    // console.log(ar);
+    console.log("reverse >>> ", reverseAr);
+    console.log("sorting the arry with asc>>>", unsortAr.sort().reverse());
+    numAr.sort(function (a, b) {
+      return a - b;
+    });
+    console.log("sort num arr>>", numAr);
+  </script>
+</html>
