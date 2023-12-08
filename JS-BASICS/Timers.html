@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const x = 10;
+
+    setTimeout(function () {
+      console.log("Banglore"); //3
+    });
+    const y = 20;
+
+    setTimeout(function () {
+      console.log("Hydebad"); //5
+    }, 5000);
+
+    console.log(x); //1
+
+    setTimeout(function () {
+      console.log("Punee"); //4
+    }, 1000);
+
+    let z = 20;
+
+    console.log(z); //2
+
+    setInterval(function () {
+      console.log("Interval calling...");
+    }, 5000);
+  </script>
+</html>
