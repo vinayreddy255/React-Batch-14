@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const promis1 = new Promise((reslove, reject) => {
+      if (false) {
+        reslove("Promise is resloved.....");
+      } else {
+        reject("Promise is rejected....");
+      }
+    });
+
+    setTimeout(() => {
+      console.log("Hi"); //3
+    });
+
+    promis1
+      .then(function (data) {
+        console.log(data);
+      })
+      .catch(function (err) {
+        console.log("normal function error>>", err);
+      });
+
+    promis1
+      .then((data) => console.log(data))
+      .catch((err) => console.log("arrow function>>", err));
+
+    console.log("Hello"); //1
+
+    setTimeout(() => {
+      console.log("Bangalore"); //4
+    }, 2000);
+
+    console.log("React js"); //2
+  </script>
+</html>

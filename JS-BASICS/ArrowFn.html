@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // console.log(Add(30, 40)); // 70
+    function Add(a, b) {
+      this.age = 20;
+      //console.log("arguments>>>", arguments); // have have own arguments in normale function
+      let obj = {
+        city: "Banglore",
+        age: 28,
+        address: function () {
+          return this;
+        },
+      };
+      console.log("normal function>>>", obj.address());
+      return a + b;
+    }
+    console.log(Add(10, 20)); //30
+
+    // console.log(newAdd(50, 70)); //
+    // var newAdd = (a, b) => a + b;
+    var newAdd = (a, b) => {
+      //   console.log("arguments>>>", arguments); // dos not have own arguments in arrow function
+      let obj = {
+        city: "Banglore",
+        age: 28,
+        address: () => {
+          return this;
+        },
+      };
+      console.log("arrow function>>>", obj.address());
+      return a + b;
+    };
+
+    console.log(newAdd(80, 60)); //
+  </script>
+</html>

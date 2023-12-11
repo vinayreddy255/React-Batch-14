@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    console.log("Promise mthods excutions....");
+    const prom1 = new Promise((reslove, reject) => {
+      setTimeout(() => {
+        reslove(["Promiose1 resloveining", 1, 2, 3, 4]);
+      }, 1000);
+    });
+
+    const prom2 = new Promise((reslove, reject) => {
+      setTimeout(() => {
+        // reslove("Promiose2 resloveining");
+        reject("Promiose2 reject...");
+      }, 4000);
+    });
+
+    const prom3 = new Promise((reslove, reject) => {
+      setTimeout(() => {
+        reslove("Promiose3 resloveining");
+      }, 6000);
+    });
+
+    Promise.all([prom1, prom2, prom3])
+      .then((data) => console.log(data))
+      .catch((err) => console.log("errr>>", err));
+
+    Promise.race([prom1, prom2, prom3])
+      .then((data) => console.log("race---", data))
+      .catch((err) => console.log("errr>>", err));
+
+    Promise.allSettled([prom1, prom2, prom3])
+      .then((data) => console.log("allSettled---", data))
+      .catch((err) => console.log("errr>>", err));
+
+    Promise.any([prom1, prom2, prom3])
+      .then((data) => console.log("any---", data))
+      .catch((err) => console.log("errr>>", err));
+  </script>
+</html>
