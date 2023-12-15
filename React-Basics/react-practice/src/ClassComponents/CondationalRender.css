@@ -1,0 +1,19 @@
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+.reactangel{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    background-color: green;
+}
+.greenSignal{
+    background-color: green;
+}
+.redSignal{
+    background-color: red;
+}

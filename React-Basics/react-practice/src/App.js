@@ -2,6 +2,8 @@ import Header from "./ClassComponents/Header";
 import Continer from "./ClassComponents/Continer";
 import EventsAndState from "./ClassComponents/EventsAndState";
 import Parent from "./ClassComponents/Parent";
+import CondationalRender from "./ClassComponents/CondationalRender";
+import Rectangle from "./ClassComponents/Rectangle";
 function App() {
   return (
     <div className="my-app">
@@ -9,7 +11,9 @@ function App() {
       <Header />
       {/* <Continer /> */}
       {/* <EventsAndState /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <CondationalRender />
+      <Rectangle />
     </div>
   );
 }
