@@ -4,7 +4,7 @@ import "./style.css";
 class Header extends Component {
   render() {
     return (
-      <div>
+      <div className="header-compoent">
         <div className="header-continer">
           <ul>
             <li>Home</li>

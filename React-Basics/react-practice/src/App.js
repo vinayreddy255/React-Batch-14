@@ -9,26 +9,39 @@ import FromHandling from "./ClassComponents/FromHandling";
 import LifeCyclesMethods from "./ClassComponents/LifeCyclesMethods";
 import PureComponentExmple from "./ClassComponents/PureComponentExmple";
 import RefComponet from "./ClassComponents/RefComponet";
+import BtnCounter from "./ClassComponents/BtnCounter";
+import HoverCounterCompoent from "./ClassComponents/HoverCounterCompoent";
+import ProtalRootComponet from "./ClassComponents/ProtalRootComponet";
+import Counter from "./FunctionlComponet/Counter";
 function App() {
   return (
-    <div className="my-app">
-      {/* <Header ></Header> */}
-      <Header />
-      {/* <Continer /> */}
-      {/* <EventsAndState /> */}
-      {/* <Parent /> */}
-      {/* <CondationalRender /> */}
-      {/* <Rectangle /> */}
+    <>
+      <div className="my-app">
+        {/* <Header ></Header> */}
+        <Header />
+        {/* <Continer /> */}
+        {/* <EventsAndState /> */}
+        {/* <Parent /> */}
+        {/* <CondationalRender /> */}
+        {/* <Rectangle /> */}
 
-      {/* 19-12-2023 */}
-      {/* <CondationalStyle /> */}
-      {/* <FromHandling /> */}
+        {/* 19-12-2023 */}
+        {/* <CondationalStyle /> */}
+        {/* <FromHandling /> */}
 
-      {/* 20-12-2023 */}
-      <LifeCyclesMethods />
+        {/* 20-12-2023 */}
+
+        {/* <LifeCyclesMethods />
       <PureComponentExmple />
-      <RefComponet />
-    </div>
+      <RefComponet /> */}
+
+        {/* 21-12-2023 */}
+        {/* <BtnCounter />
+        <HoverCounterCompoent /> */}
+        <Counter />
+      </div>
+      {/* <ProtalRootComponet /> */}
+    </>
   );
 }
 
