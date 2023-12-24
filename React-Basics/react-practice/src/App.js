@@ -13,34 +13,52 @@ import BtnCounter from "./ClassComponents/BtnCounter";
 import HoverCounterCompoent from "./ClassComponents/HoverCounterCompoent";
 import ProtalRootComponet from "./ClassComponents/ProtalRootComponet";
 import Counter from "./FunctionlComponet/Counter";
+import UseEffectHook from "./FunctionlComponet/UseEffectHook";
+import RefHook from "./FunctionlComponet/RefHook";
+import { MyContext } from "./FunctionlComponet/Context1";
+import { MyContext2 } from "./FunctionlComponet/Context2";
 function App() {
+  const empObj = {
+    name: "Kiran",
+    age: 25,
+    city: "Bangalore",
+    phone: 9110237846,
+  };
   return (
     <>
-      <div className="my-app">
-        {/* <Header ></Header> */}
-        <Header />
-        {/* <Continer /> */}
-        {/* <EventsAndState /> */}
-        {/* <Parent /> */}
-        {/* <CondationalRender /> */}
-        {/* <Rectangle /> */}
+      <MyContext.Provider value={empObj}>
+        <MyContext2.Provider value={["Apple", "Orange", "Mango"]}>
+          <div className="my-app">
+            {/* <Header ></Header> */}
+            <Header />
+            {/* <Continer /> */}
+            {/* <EventsAndState /> */}
+            {/* <Parent /> */}
+            {/* <CondationalRender /> */}
+            {/* <Rectangle /> */}
 
-        {/* 19-12-2023 */}
-        {/* <CondationalStyle /> */}
-        {/* <FromHandling /> */}
+            {/* 19-12-2023 */}
+            {/* <CondationalStyle /> */}
+            {/* <FromHandling /> */}
 
-        {/* 20-12-2023 */}
+            {/* 20-12-2023 */}
 
-        {/* <LifeCyclesMethods />
+            {/* <LifeCyclesMethods />
       <PureComponentExmple />
       <RefComponet /> */}
 
-        {/* 21-12-2023 */}
-        {/* <BtnCounter />
+            {/* 21-12-2023 */}
+            {/* <BtnCounter />
         <HoverCounterCompoent /> */}
-        <Counter />
-      </div>
-      {/* <ProtalRootComponet /> */}
+            {/* <Counter /> */}
+          </div>
+          {/* <ProtalRootComponet /> */}
+
+          {/* 24-122023 */}
+          <UseEffectHook address={{ pincode: "2433", stree: "near temaple" }} />
+          <RefHook />
+        </MyContext2.Provider>
+      </MyContext.Provider>
     </>
   );
 }
