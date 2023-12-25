@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var arrOfObject = [
+      {
+        name: "Kiran",
+        id: 100,
+        city: "hyderba",
+        state: "Ts",
+        phone: 12345,
+        address: { pincode: 1234, landmark: "near temple" },
+      },
+      {
+        name: "Sam",
+        id: 101,
+        city: "Bangalore",
+        state: "KA",
+        phone: 47567657,
+        address: { pincode: 56789, landmark: "near postoffice" },
+      },
+      {
+        name: "sreenu",
+        id: 102,
+        city: "Chennai",
+        state: "Tn",
+        phone: 90000191,
+        address: {
+          pincode: 56789,
+          landmark: "near bustand",
+          contact: { home: "898989", houseNumber: 190 },
+        },
+      },
+    ];
+    console.log(arrOfObject[1].address.landmark);
+    console.log(arrOfObject[2].address.contact.houseNumber);
+  </script>
+</html>

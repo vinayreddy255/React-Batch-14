@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const name = "Ram";
+    const city = "Banglore";
+    //My name is Ram, and city is Banglore
+    console.log("My name is " + name + ",and city is" + city);
+    console.log(`My name is ${name}, and city is ${city}`);
+    const ar1 = ["Apple", "Mi", "Appo", "Lg", "Samsung", "Nokia"];
+    let [app, mi, , abc, ...rem] = ar1;
+    console.log(ar1[0]);
+    // app = "test";
+    console.log(app, mi);
+    console.log(ar1);
+    console.log(rem);
+
+    const obj = {
+      name1: "ram",
+      city1: "Banglore",
+      age: 26,
+      slar: 21345,
+      phone: 1234567,
+      //   pincode: 19876,
+      address: { steet: "near Temple", landMark: "postOffice" },
+    };
+    const {
+      phone,
+      city1,
+      name1,
+      pincode = "8900",
+      address: { steet = "no street", landMark },
+    } = obj;
+
+    console.log(phone, city1, name1);
+    console.log(pincode);
+    console.log(steet);
+    console.log(landMark);
+  </script>
+</html>

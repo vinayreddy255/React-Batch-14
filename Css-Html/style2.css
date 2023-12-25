@@ -1,0 +1,27 @@
+.flex-continer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-data{
+    height: 60px;
+    width: 60px;
+    border: 2px solid;
+    margin-top:10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fbox-continer{
+    display: flex;
+        justify-content: space-around;
+        justify-content: space-between;
+}
+.f-center{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var str = "hello reAct js world";
+    var word = str.split(" ");
+    var reverse = "";
+    for (var i = 0; i < word.length; i++) {
+      var nstr = "";
+      for (var k = word[i].length - 1; k >= 0; k--) {
+        nstr += word[i][k];
+      }
+      reverse += nstr + " ";
+    }
+    console.log(reverse);
+
+    //olleh tcaer sj dlrow
+  </script>
+</html>

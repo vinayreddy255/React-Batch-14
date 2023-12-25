@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="substr"></div>
+  </body>
+  <script>
+    var str = "hello react js world";
+
+    console.log(str);
+    console.log(str.substr(0, 4));
+    console.log(str.substr(6, 5));
+    document.getElementById("substr").innerHTML = str.substr(0, 5);
+
+    //[h, e, l,l,o, , r,e,a,c,t, , j,s, , w,o,r,l,d]
+    // [hello, react, js, world]
+
+    var strAr = str.split("");
+    var strArW = str.split(" ");
+    console.log(strAr);
+    console.log(strArW);
+
+    for (var i = 0; i < strArW.length; i++) {
+      console.log(strArW[i]);
+    }
+
+    var str2 = "hello react js, angular js, vue js, back bone js, node js";
+    console.log(str2);
+    console.log(str2.replace("js", "data"));
+    console.log(str2.replaceAll("js", "data"));
+
+    // input : hello react js world
+    // output1: Hello React Js World
+    // output2: HellO ReacT JS WorlD
+    // output3: hELLo rEACt js wORLD
+    // output4: olleh tcaer sj dlrow
+    // output5: hEllon rEact jS wOrld
+    // without using replce all we have to replace string all placess
+  </script>
+</html>

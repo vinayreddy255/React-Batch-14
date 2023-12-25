@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="factorial"></div>
+  </body>
+  <script>
+    // 5*4*3*2*1 = 120
+    var fact = 1;
+    var patrent = "";
+    for (var i = 7; i >= 1; i--) {
+      fact = fact * i;
+      if (i > 1) {
+        patrent += i + "*";
+      } else {
+        patrent += i;
+      }
+    }
+
+    var ouput = patrent + "=" + fact;
+    document.getElementById("factorial").innerHTML = "<h1>" + ouput + "</h1>";
+    console.log(ouput);
+  </script>
+</html>

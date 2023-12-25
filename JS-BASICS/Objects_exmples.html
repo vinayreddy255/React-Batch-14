@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var obj = {
+      name: "Ram",
+      city: "Banglore",
+      id: 101,
+      phone: 2345678,
+      empolye: {
+        empName: "Krishan",
+        compnay: "IBM",
+        id: "4rrrib",
+        address: { city: "hyderbad", landmark: "HITECH-city" },
+      },
+      pincode: "678987",
+    };
+
+    // var arr = [1, 2, 3];
+    console.log(obj.city);
+    console.log(obj.pincode);
+    console.log(obj["phone"]);
+    console.log(obj.empolye.compnay);
+    console.log(obj["empolye"]["compnay"]);
+    console.log(obj.empolye.address.landmark);
+  </script>
+</html>

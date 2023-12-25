@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .inline-divs {
+        height: 100px;
+        width: 100px;
+        border: 2px solid;
+        margin: 10px;
+        box-sizing: border-box;
+        /* display: inline; */
+        display: inline-block;
+      }
+      .visble-div {
+        height: 100px;
+        width: 100px;
+        border: 2px solid red;
+        margin: 10px;
+        box-sizing: border-box;
+        /* visibility: hidden; */
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visble-div">Test javaScript</div>
+
+    <div class="contier">
+      <div class="inline-divs">1</div>
+      <div class="inline-divs">2</div>
+      <div class="inline-divs">3</div>
+      <div class="inline-divs">4</div>
+      <div class="inline-divs">5</div>
+      <div class="inline-divs">6</div>
+    </div>
+  </body>
+</html>

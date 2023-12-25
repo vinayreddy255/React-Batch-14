@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .opcity-div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid blue;
+        margin-top: 10px;
+      }
+      .opcity-div {
+        opacity: 0.1;
+        /* visibility: hidden; */
+      }
+      .div-h {
+        width: 500px;
+        height: 100px;
+        border: 2px solid blue;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .positions-div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid blue;
+        margin-top: 10px;
+        display: inline-block;
+        margin-left: 30px;
+      }
+      .p3 {
+        background-color: aquamarine;
+        position: relative;
+        left: 150px;
+        z-index: -1;
+      }
+      .p4 {
+        background-color: blueviolet;
+      }
+      .p-test {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="opcity-div" onclick="alert('opacity data')">Opcity Data</div>
+    <div class="div-h">Actual Data</div>
+    <div class="postions">
+      <div class="positions-div p1">1</div>
+      <div class="positions-div p2">2</div>
+      <div class="positions-div p3">3</div>
+      <div class="positions-div p4">4</div>
+      <div class="positions-div p5">5</div>
+    </div>
+
+    <p class="positions-div p-test">xyz contet</p>
+  </body>
+</html>

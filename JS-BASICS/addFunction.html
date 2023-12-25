@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function add(input1, input2) {
+      return input1 + input2;
+    }
+    console.log(add(10, 20));
+    console.log(add(30, 40));
+
+    function arthMeticOperations(a, b, i) {
+      var output = 0;
+      if (i == "+") {
+        output = a + b;
+      } else if (i == "-") {
+        output = a - b;
+      } else if (i == "*") {
+        output = a * b;
+      }
+      return output;
+    }
+    var multipule = arthMeticOperations(10, 20, "*");
+    console.log("addition>>>", multipule); //0
+    console.log("addition>>>", arthMeticOperations(10, 20, "+")); //0
+    console.log("addition>>>", arthMeticOperations(10, 20, "-")); //0
+  </script>
+</html>

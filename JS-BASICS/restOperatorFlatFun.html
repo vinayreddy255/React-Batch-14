@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function restOperation(a, b, c, ...r) {
+      console.log(a, b, c, r);
+      /* for (let i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
+      } */
+    }
+    restOperation(10, 20, 30, 40, 50, 60, 70, 80, "hi", "hello");
+    const ar = [
+      "ram",
+      1,
+      [2, [3, [4], "Bangalore", [5, [6, [7], [8], [9]]], "hi", "hello"]],
+    ];
+    //[ram,1,2,3,4,Bangalore, 5,6,7,8,9,hi, hello]
+    const flatAr = ar.flat(5);
+    console.log(flatAr);
+
+    const obj = { name: "Kiran", age: 25, city: "Banglore", phone: 12344 };
+    const obj1 = [{ name: "Kiran", age: 25, city: "Banglore", phone: 12344 }];
+    for (let key in obj) {
+      console.log(key, ">>", obj[key]);
+    }
+
+    for (let e of obj1) {
+      console.log(e);
+    }
+  </script>
+  ,
+</html>

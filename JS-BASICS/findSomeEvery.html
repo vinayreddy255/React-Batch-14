@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var ar1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var num = 2780;
+    var everyAr = ar1.every(function (e) {
+      return e > 1;
+    });
+
+    var someAr = ar1.some(function (e) {
+      return e >= 9;
+    });
+
+    console.log("everyAr>>", everyAr);
+
+    console.log("someAr>>", someAr);
+    var findAr = ar1.find(function (e) {
+      return e > 4;
+    });
+    console.log("findAr>>>", findAr);
+
+    console.log(typeof typeof ar1);
+    //Array.isArray(arr) check it's arry or not
+    console.log(Array.isArray(ar1));
+    console.log(Array.isArray(num));
+
+    var a = "Hello";
+    var b = a;
+    b = "Hi";
+    console.log(a);
+    console.log(b);
+    var ar2 = [1, 2, 3, 4, 5];
+    var ar3 = ar2;
+    ar3[1] = "Hi";
+    console.log(ar2); //[1, 2, 3, 4, 5];
+    console.log(ar3); // [1,hi,]
+  </script>
+</html>
