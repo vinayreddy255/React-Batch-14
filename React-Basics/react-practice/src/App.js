@@ -17,6 +17,7 @@ import UseEffectHook from "./FunctionlComponet/UseEffectHook";
 import RefHook from "./FunctionlComponet/RefHook";
 import { MyContext } from "./FunctionlComponet/Context1";
 import { MyContext2 } from "./FunctionlComponet/Context2";
+import UsersListRestApi from "./FunctionlComponet/UsersListRestApi";
 function App() {
   const empObj = {
     name: "Kiran",
@@ -55,8 +56,12 @@ function App() {
           {/* <ProtalRootComponet /> */}
 
           {/* 24-122023 */}
-          <UseEffectHook address={{ pincode: "2433", stree: "near temaple" }} />
-          <RefHook />
+
+          {/* <UseEffectHook address={{ pincode: "2433", stree: "near temaple" }} />
+          <RefHook /> */}
+
+          {/* 25-12-2023 */}
+          <UsersListRestApi />
         </MyContext2.Provider>
       </MyContext.Provider>
     </>
