@@ -18,6 +18,14 @@ import RefHook from "./FunctionlComponet/RefHook";
 import { MyContext } from "./FunctionlComponet/Context1";
 import { MyContext2 } from "./FunctionlComponet/Context2";
 import UsersListRestApi from "./FunctionlComponet/UsersListRestApi";
+import UseMemoHook from "./FunctionlComponet/UseMemoHook";
+
+import Home from "./FunctionlComponet/Home";
+import About from "./FunctionlComponet/About";
+import Contact from "./FunctionlComponet/Contact";
+import Product from "./FunctionlComponet/Prodcut";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   const empObj = {
     name: "Kiran",
@@ -29,39 +37,52 @@ function App() {
     <>
       <MyContext.Provider value={empObj}>
         <MyContext2.Provider value={["Apple", "Orange", "Mango"]}>
-          <div className="my-app">
-            {/* <Header ></Header> */}
+          <Router>
             <Header />
-            {/* <Continer /> */}
-            {/* <EventsAndState /> */}
-            {/* <Parent /> */}
-            {/* <CondationalRender /> */}
-            {/* <Rectangle /> */}
+            <Routes>
+              <Route path="/" Component={Home} />
+              <Route path="/about" Component={About} />
+              <Route path="/contact" Component={Contact} />
+              <Route path="/product" Component={Product} />
+            </Routes>
 
-            {/* 19-12-2023 */}
-            {/* <CondationalStyle /> */}
-            {/* <FromHandling /> */}
+            <div className="my-app">
+              {/*  */}
 
-            {/* 20-12-2023 */}
+              {/* <Continer /> */}
+              {/* <EventsAndState /> */}
+              {/* <Parent /> */}
+              {/* <CondationalRender /> */}
+              {/* <Rectangle /> */}
 
-            {/* <LifeCyclesMethods />
+              {/* 19-12-2023 */}
+              {/* <CondationalStyle /> */}
+              {/* <FromHandling /> */}
+
+              {/* 20-12-2023 */}
+
+              {/* <LifeCyclesMethods />
       <PureComponentExmple />
       <RefComponet /> */}
 
-            {/* 21-12-2023 */}
-            {/* <BtnCounter />
+              {/* 21-12-2023 */}
+              {/* <BtnCounter />
         <HoverCounterCompoent /> */}
-            {/* <Counter /> */}
-          </div>
-          {/* <ProtalRootComponet /> */}
+              {/* <Counter /> */}
+            </div>
+            {/* <ProtalRootComponet /> */}
 
-          {/* 24-122023 */}
+            {/* 24-122023 */}
 
-          {/* <UseEffectHook address={{ pincode: "2433", stree: "near temaple" }} />
+            {/* <UseEffectHook address={{ pincode: "2433", stree: "near temaple" }} />
           <RefHook /> */}
 
-          {/* 25-12-2023 */}
-          <UsersListRestApi />
+            {/* 25-12-2023 */}
+            {/* <UsersListRestApi /> */}
+            {/* 29-12-2023 */}
+
+            {/* <UseMemoHook /> */}
+          </Router>
         </MyContext2.Provider>
       </MyContext.Provider>
     </>
